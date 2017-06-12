@@ -30,3 +30,16 @@ function nameTaker(){
   }
 }
 nameTaker("Gaz", "Chaz", "Baz", "Daz", "Raz", "Saz");
+
+
+// Function being invoke in another function
+
+var addition = function(a, b){
+  return a + b;
+}
+
+var specialFunction = function(functionToInvoke){
+  console.log(functionToInvoke(3, 4));
+}
+
+specialFunction(addition);
